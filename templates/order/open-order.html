@@ -1,0 +1,29 @@
+{% extends "base/base-templates.html" %}
+{% block content %}
+{% load static %}
+
+<div class="ordernav">
+    <h2>Your Order</h2>
+    <div class="search-container">
+        <form action="">
+            <input type="text" placeholder="Search all orders" name="search">
+            <button type="submit">Search Orders</button>
+        </form>
+    </div>
+    <ul>
+        <li><a href="{{BASE_URL}}order/return_order">Orders</a></li>
+        <li><a href="{{BASE_URL}}order/buy_again">Buy Again</a></li>
+        <li><a href="{{BASE_URL}}order/open_order">Open Orders</a></li>
+        <li><a href="{{BASE_URL}}order/cancelled_order">Cancelled Orders</a></li>
+    </ul>
+
+</div>
+
+<div class="vieworders">
+    <p>Looking for an order? All of your orders have been dispatched.<a
+            href="{{BASE_URL}}order/return_order">View all orders</a>
+    </p>
+
+</div>
+
+{% endblock %}

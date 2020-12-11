@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Created By Me -->
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+
+    <title>Account</title>
+</head>
+
+<body>
+    <div class="home">
+        <h1><a href="{{BASE_URL}}home">Amazon.in</a></h1>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer Part -->
+    <footer>
+            <div class="policy">
+                <a href="">Conditions of Use & Sale</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Interest-Based Ads</a>
+                <p>&copy; 1996-2020, Amazon.com, Inc or its affiliates</p>
+            </div>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+
+</html>

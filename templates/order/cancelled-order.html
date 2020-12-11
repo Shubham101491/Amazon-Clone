@@ -1,0 +1,34 @@
+{% extends "base/base-templates.html" %}
+{% block content %}
+{% load static %}
+
+<div class="ordernav">
+    <h2>Your Order</h2>
+    <div class="search-container">
+        <form action="">
+            <input type="text" placeholder="Search all orders" name="search">
+            <button type="submit">Search Orders</button>
+        </form>
+    </div>
+    <ul>
+        <li><a href="{{BASE_URL}}order/return_order" id="next">Orders</a></li>
+        <li><a href="#">Buy Again</a></li>
+        <li><a href="#">Open Orders</a></li>
+        <li><a href="{{BASE_URL}}order/cancelled_order">Cancelled Orders</a></li>
+        <!-- <li><a href="{{BASE_URL}}order/return_order" id="next" >Next vocabulary</a></li> -->
+    </ul>
+
+</div>
+
+<!-- <script>
+    document.getElementById("next").focus();
+</script> -->
+
+<div class="vieworders">
+    <p>We aren't finding any cancelled orders (for orders placed in the last 6 months).<a
+            href="{{BASE_URL}}order/return_order">View all orders</a>
+    </p>
+
+</div>
+
+{% endblock %}

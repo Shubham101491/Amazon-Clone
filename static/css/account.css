@@ -1,0 +1,96 @@
+.home h1 {
+    text-align: center;
+}
+
+.home a {
+    color: black;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: black;
+}
+
+.account {
+    margin: auto;
+    width: 20em;
+    border: 1px solid gray;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    outline: none;
+}
+
+.account button {
+    width: 100%;
+    background-color: rgba(238, 195, 52, 0.712);
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.account a {
+    text-decoration: none;
+}
+
+.a a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.account p {
+    font-size: 12px;
+}
+
+.register {
+    margin: auto;
+    width: 22em;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.register button {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 89px;
+}
+
+.register a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    text-transform: capitalize;
+    color: #9EAFAF;
+    padding: 10px;
+    background-color: black;
+}
+
+footer .policy {
+    text-transform: capitalize;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .policy a {
+    color: #9EAFAF;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+footer .policy a:hover {
+    color: #9EAFAF;
+    text-decoration: underline;
+}

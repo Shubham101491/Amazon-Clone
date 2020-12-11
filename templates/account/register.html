@@ -1,0 +1,23 @@
+{% extends 'account/account-base-templates.html' %}
+{% block content %}
+{% load static %}
+
+<div class="account">
+    <form action="">
+        <h2>Create Account</h2>
+        <label for=""><b>Your Name</b></label>
+        <input type="text" autofocus>
+        <label for=""><b>Mobile Number</b></label>
+        <input type="tel" name="" id="">
+        <label for=""><b>Email(optional)</b></label>
+        <input type="email" name="" id="">
+        <label for=""><b>Password</b></label>
+        <input type="password" name="" id="">
+
+        <p>We will send you a text to verify your phone.Message and Data rates may apply.</p>
+        <button type="submit">Continue</button>
+    </form>
+    <p>Already have an account? <a href="{{BASE_URL}}account/signin">Sign in</a></p>
+</div>
+
+{% endblock %}

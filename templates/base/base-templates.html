@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS Created by Me -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <!-- JS also for Carousel -->
+    <!-- JavaScript Bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy"
+        crossorigin="anonymous"></script>
+
+
+    <title>Amazon</title>
+</head>
+
+<body>
+    <div class="amazon" id="top">
+
+        <!-- nav -->
+        <div class="nav">
+
+            <!-- Sidenav -->
+            <ul>
+
+                <div id="mySidenav" class="sidenav">
+                    <div class="closebutton">
+                        <a href="{{BASE_URL}}account/signin"> <i class="fa fa-user">Hello, Signin</i></a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+                    </div>
+
+                    <section>
+                        <ul>
+                            <h4>Trending</h4>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">New Releases</a></li>
+                            <li><a href="#">Movers and Shakers</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <ul>
+                            <h4>Digital Content And Devices</h4>
+                            <li class="hover-me"><a href="#">echo & alexa <i class="fa fa-angle-right"></i></a>
+                                <!-- JS Part -->
+                                <!-- <div class="sub-menu-1">
+                                    <ul>
+                                        <li><a href="#">all-new echo dot (4th gen)</a></li>
+                                        <li><a href="#">echo dot (3rd gen)</a></li>
+                                        <li><a href="#">echo show 8</a></li>
+                                        <li><a href="#">echo input portable speaker</a></li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li><a href="#">fire tv stick <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">kindle e-readers & ebooks <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">audible audiobooks <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">amazon prime video <i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">amazon prime music <i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <ul>
+                            <h4>Shop by department</h4>
+                            <li><a href="#">Mobiles, Computers</a></li>
+                            <li><a href="#">TV, Appliances, Electronics</a></li>
+                            <li><a href="#">Men's Fashion</a></li>
+                            <li><a href="#">Women's Fashion</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <ul>
+                            <h4>Program & Features</h4>
+                            <li><a href="#">gift cards & mobile recharges</a></li>
+                            <li><a href="#">flight tickets</a></li>
+                            <li><a href="#">full store directory</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <ul>
+                            <h4>help & settings</h4>
+                            <li><a href="#">your account</a></li>
+                            <li><a href="#">customer service</a></li>
+                            <li><a href="{{BASE_URL}}account/signin">sign in</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </section>
+
+                </div>
+            </ul>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <!-- close sidenav -->
+
+            <!-- topnav -->
+            <div class="topnav">
+                <ul>
+                    <li><a href="{{BASE_URL}}">amazon</a></li>
+                    <li><a href="{{BASE_URL}}account/signin">Sign in</a></li>
+                    <li><a href="{{BASE_URL}}order/return_order">Return & Order</a></li>
+                    <li><a href="#contact">Try prime</a></li>
+                    <li> <a href="#contact">cart</a></li>
+
+                    <div class="search-container">
+                        <form action="">
+                            <input type="text" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- close topnav -->
+
+
+
+            <!-- bottomnav -->
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="#home">hello</a></li>
+                    <li><a href="#about">gift cards</a></li>
+                    <li><a href="#contact">best sellers</a></li>
+                    <li><a href="#contact">mobiles</a></li>
+                    <li> <a href="#contact">today's deal</a></li>
+                    <li> <a href="#contact">new releases</a></li>
+                    <li> <a href="#contact">electronics</a></li>
+                    <li> <a href="#contact">computers</a></li>
+                    <li> <a href="#contact">shopping made easy | download the app</a></li>
+                </ul>
+            </div>
+
+            <!-- close topnav -->
+
+            <!-- close nav -->
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <div class="top">
+                <a href="#top">Back to top</a>
+            </div>
+
+            <div class="middle">
+                <h4>Our Offices</h4>
+                <ul>
+                    <li><a href="#">australia</a></li>
+                    <li><a href="#">brazil</a></li>
+                    <li><a href="#">canada</a></li>
+                    <li><a href="#">china</a></li>
+                    <li><a href="#">france</a></li>
+                    <li><a href="#">germany</a></li>
+                    <li><a href="#">italy</a></li>
+                    <li><a href="#">japan</a></li>
+                    <li><a href="#">mexico</a></li>
+                    <li><a href="#">netherland</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="bottom">
+                <a href="#">condition of use & sale</a>
+                <a href="#">privacy notice</a>
+                <a href="#">interest-based ads</a>
+                <span style="color: #D5D8DC" ;>&copy; 1996-2020, amazon.com, inc. or its affiliates</span>
+
+            </div>
+
+        </footer>
+
+        <!-- close amazon -->
+    </div>
+
+    <!-- JS For SideNav -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
