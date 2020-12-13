@@ -79,7 +79,7 @@ Return Order HTML Part */
 }
 
 .ordernav input[type=text]:focus {
-    border-inline: 1px solid orange;
+    outline: 1px solid rgb(48, 127, 153);
 }
 
 .ordernav .search-container button {
@@ -105,11 +105,12 @@ Return Order HTML Part */
 
 /* End Order Navbar */
 
-/* View orde part */
+/* View order part */
 
 .vieworders p {
     text-align: center;
     font-size: 13px;
+    margin-bottom: 20px;
 }
 
 .vieworders a {
@@ -122,4 +123,27 @@ Return Order HTML Part */
     color: #F5A14B;
 }
 
-/* End Order Part */
+/* Slide Gallery */
+
+.row {
+    background-color: rgba(174, 0, 255, 0.199);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.row h4 {
+    text-align: center;
+}
+
+.row .column {
+    width: 20%;
+}
+
+/* .row .column img {
+    width: auto;
+    box-sizing: border-box;
+} */
+
+/* EndSlide Gallery */

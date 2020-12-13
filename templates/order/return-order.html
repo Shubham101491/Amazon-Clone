@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 
-<!-- ordernav css is in gallary -->
+<!-- ordernav css is in gallary.css -->
 <div class="ordernav">
     <h2>Your Order</h2>
     <div class="search-container">
@@ -19,20 +19,64 @@
     </ul>
 
     <form action="">
-        <label for="favoriteColor">0 orders place in</label><br>
-        <select name="favoriteColor" id="favoriteColor">
-            <option value="past 3 months">past 3 months</option>
-            <option value="year 2020" selected>2020</option>
-            <option value="year 2019">2019</option>
-            <option value="year 2018" >2018</option>
+        <label for="order">0 orders place in</label><br>
+        <select name="order" id="order">
+            <option value="last 30 days">last 30 days</option>
+            <option value="past 3 months" selected>past 3 months</option>
+            <option value="year 2019">2020</option>
+            <option value="year 2018">2019</option>
             <option value="archive">Archived Orders</option>
         </select>
     </form>
 </div>
 
-
 <div class="vieworders">
     <p>You have not placed any orders in past 3 months. <a href="">View orders in 2020</a></p>
 </div>
+
+<!-- Slide Gallery -->
+
+<!-- The four columns -->
+<div class="row">
+    <h4>Order You Like It</h4>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+
+</div>
+
+<div class="row">
+    <h4>Today's Deal</h4>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+
+</div>
+
+<!-- End Slide Gallery -->
 
 {% endblock %}

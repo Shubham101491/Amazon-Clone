@@ -11,24 +11,64 @@
         </form>
     </div>
     <ul>
-        <li><a href="{{BASE_URL}}order/return_order" id="next">Orders</a></li>
-        <li><a href="#">Buy Again</a></li>
-        <li><a href="#">Open Orders</a></li>
+        <li><a href="{{BASE_URL}}order/return_order">Orders</a></li>
+        <li><a href="{{BASE_URL}}order/buy_again">Buy Again</a></li>
+        <li><a href="{{BASE_URL}}order/open_order">Open Orders</a></li>
         <li><a href="{{BASE_URL}}order/cancelled_order">Cancelled Orders</a></li>
-        <!-- <li><a href="{{BASE_URL}}order/return_order" id="next" >Next vocabulary</a></li> -->
     </ul>
 
 </div>
-
-<!-- <script>
-    document.getElementById("next").focus();
-</script> -->
 
 <div class="vieworders">
     <p>We aren't finding any cancelled orders (for orders placed in the last 6 months).<a
             href="{{BASE_URL}}order/return_order">View all orders</a>
     </p>
+</div>
+
+<!-- Slide Gallery -->
+
+<!-- The four columns -->
+<div class="row">
+    <h4>Order You Like It</h4>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
 
 </div>
+
+<div class="row">
+    <h4>Today's Deal</h4>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+
+</div>
+
+<!-- End Slide Gallery -->
+
 
 {% endblock %}
