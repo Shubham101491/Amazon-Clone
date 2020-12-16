@@ -3,6 +3,11 @@
 {% load static %}
 
 <div class="ordernav">
+
+    <div class="accountpart">
+        <a href="{{BASE_URL}}user_account/your_account">Your Account</a> Your Orders
+    </div>
+
     <h2>Your Order</h2>
     <div class="search-container">
         <form action="">
@@ -32,19 +37,24 @@
 <div class="row">
     <h4>Order You Like It</h4>
     <div class="column">
-        <img src="{% static 'images/laptop.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/laptop.jpg' %}" alt="Nature"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/laptop.jpg' %}" alt="Lights"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/laptop.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/laptop.jpg' %}" alt="Nature"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/laptop.jpg' %}" alt="Lights"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/laptop.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/laptop.jpg' %}" alt="Lights"
+                style="width:100%"></a>
     </div>
 
 </div>
@@ -52,24 +62,28 @@
 <div class="row">
     <h4>Today's Deal</h4>
     <div class="column">
-        <img src="{% static 'images/mobile.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/mobile.jpg' %}" alt="Nature"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/mobile.jpg' %}" alt="Lights"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/mobile.jpg' %}" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/mobile.jpg' %}" alt="Nature"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"><img src="{% static 'images/mobile.jpg' %}" alt="Lights"
+                style="width:100%"></a>
     </div>
     <div class="column">
-        <img src="{% static 'images/mobile.jpg' %}" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <a href="{{BASE_URL}}products/product_detail"></a><img src="{% static 'images/mobile.jpg' %}" alt="Lights"
+            style="width:100%"></a>
     </div>
 
 </div>
 
 <!-- End Slide Gallery -->
-
 
 {% endblock %}

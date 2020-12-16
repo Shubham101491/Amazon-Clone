@@ -4,6 +4,11 @@
 
 <!-- ordernav css is in gallary -->
 <div class="ordernav">
+
+    <div class="accountpart">
+        <a href="{{BASE_URL}}user_account/your_account">Your Account</a> Your Orders
+    </div>
+
     <h2>Your Order</h2>
     <div class="search-container">
         <form action="">
@@ -18,21 +23,11 @@
         <li><a href="{{BASE_URL}}order/cancelled_order">Cancelled Orders</a></li>
     </ul>
 
-    <!-- <form action="">
-        <label for="favoriteColor">0 orders place in</label><br>
-        <select name="favoriteColor" id="favoriteColor">
-            <option value="past 3 months">past 3 months</option>
-            <option value="year 2020" selected>2020</option>
-            <option value="year 2019">2019</option>
-            <option value="year 2018" >2018</option>
-            <option value="archive">Archived Orders</option>
-        </select>
-    </form> -->
 </div>
 
-
 <div class="vieworders">
-    <p>You have not placed any orders in past 3 months. <a href="{{BASE_URL}}order/return_order">View orders in 2020</a></p>
+    <p>You have not placed any orders in past 3 months. <a href="{{BASE_URL}}order/return_order">View orders in 2020</a>
+    </p>
 </div>
 
 {% endblock %}

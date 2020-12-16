@@ -1,14 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base/base-templates.html" %}
+{% block content %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!-- user account details in gallery css -->
 
-<body>
-    Your Account
-</body>
+<div class="useraccount">
+    <h2>Your Account</h2>
 
-</html>
+    <a href="{{BASE_URL}}order/return_order">
+        <h5>Your Order </h5>
+        <i class="fa fa-archive fa-3x"></i>
+        <p>Track, return, or buy things again</p>
+    </a>
+
+    <a href="#">
+        <h5>Login & security </h5>
+        <i class="fa fa-lock fa-3x"></i>
+        <p>Edit login,name, and mobile number</p>
+    </a>
+
+    <a href="#">
+        <h5>Prime</h5>
+        <i class="fa fa-archive fa-3x"></i>
+        <p>View benefits and payment settings</p>
+    </a>
+
+    <a href="{{BASE_URL}}user_account/your_addresses">
+        <h5>Your Addresses </h5>
+        <i class="fa fa-map-marker fa-3x"></i>
+        <p>Edit addresses for orders and gifts</p>
+    </a>
+
+    <a href="#">
+        <h5>Payment options</h5>
+        <i class="fa fa-credit-card-alt fa-3x"></i>
+        <p>Edit or add payment methods</p>
+    </a>
+
+    <a href="#">
+        <h5>Email</h5>
+        <i class="fa fa-google-wallet fa-3x"></i>
+        <p>Add money to your balance</p>
+    </a>
+
+</div>
+<!--End useaccount  -->
+
+<!-- user link start -->
+
+<div class="userlinks">
+
+    <div class="box2">
+        <h5>Digital content and devices</h5>
+        <ul>
+            <li><a href="#">Apps and more</a></li>
+            <li><a href="#">Content and devices</a></li>
+            <li><a href="#">Digital gifts you've received</a></li>
+        </ul>
+    </div>
+    <div class="box2">
+        <h5>Email alerts, messages, and ads</h5>
+        <ul>
+            <li><a href="#">Apps and more</a></li>
+            <li><a href="#">Content and devices</a></li>
+            <li><a href="#">Digital gifts you've received</a></li>
+        </ul>
+    </div>
+    <div class="box2">
+        <h5>Ordering and shopping preferences</h5>
+        <ul>
+            <li><a href="#">Apps and more</a></li>
+            <li><a href="#">Content and devices</a></li>
+            <li><a href="#">Digital gifts you've received</a></li>
+        </ul>
+    </div>
+    <div class="box2">
+        <h5>Other accounts</h5>
+        <ul>
+            <li><a href="#">Apps and more</a></li>
+            <li><a href="#">Content and devices</a></li>
+            <li><a href="#">Digital gifts you've received</a></li>
+            <li><a href="#">Apps and more</a></li>
+            <li><a href="#">Content and devices</a></li>
+            <li><a href="#">Digital gifts you've received</a></li>
+
+        </ul>
+    </div>
+
+</div>
+
+<!-- User account close -->
+
+{% endblock %}

@@ -47,6 +47,12 @@ Return Order HTML Part */
     border-bottom: 0.5px solid gray;
 }
 
+.ordernav .accountpart {
+    display: inline-block;
+    color: orange;
+    font-size: 13px;
+}
+
 .ordernav li {
     list-style-type: none;
     display: inline;
@@ -141,9 +147,109 @@ Return Order HTML Part */
     width: 20%;
 }
 
-/* .row .column img {
-    width: auto;
-    box-sizing: border-box;
-} */
-
 /* EndSlide Gallery */
+
+/* your-account part */
+
+.useraccount {
+    width: 85%;
+    padding: 30px;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+
+.useraccount a {
+    width: 310px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: black;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.useraccount a:hover {
+    background-color: rgba(128, 128, 128, 0.26);
+    color: black;
+}
+
+.useraccount .box1:hover, .useraccount .box1:focus {
+    background-color: rgba(128, 128, 128, 0.329);
+}
+
+.userlinks {
+    width: 85%;
+    padding: 30px;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+
+.userlinks .box2 {
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.userlinks .box2 ul {
+    list-style-type: none;
+}
+
+.userlinks .box2 a {
+    text-decoration: none;
+}
+
+.userlinks a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* End User account  */
+
+/* user address */
+
+.userpart {
+    width: 85%;
+    padding: 30px;
+    margin: auto;
+    /* border-bottom: 1px solid gray; */
+}
+
+.userpart .accountpart {
+    display: inline-block;
+    color: orange;
+    font-size: 13px;
+}
+
+.userpart .accountpart a {
+    color: black;
+    text-decoration: none;
+}
+
+.userpart .accountpart a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.useraddress a {
+    width: 450px;
+    border: 3px dashed gray;
+    border-radius: 10px;
+    color: gray;
+    padding: 54px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.useraddress a:hover {
+    color: gray;
+}
+
+/* End User address */

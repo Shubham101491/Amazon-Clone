@@ -196,6 +196,7 @@ body {
 .bottom-nav a {
     text-transform: capitalize;
 }
+
 footer {
     width: 100%;
 }
@@ -240,5 +241,5 @@ footer a {
 
 footer .bottom a:hover {
     text-decoration: underline;
-    color:  #D5D8DC;
+    color: #D5D8DC;
 }

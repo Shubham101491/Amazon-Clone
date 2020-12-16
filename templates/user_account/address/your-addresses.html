@@ -1,0 +1,27 @@
+{% extends "base/base-templates.html" %}
+{% block content %}
+{% load static %}
+
+<!-- gallery css -->
+<div class="userpart">
+
+    <div class="accountpart">
+        <a href="{{BASE_URL}}user_account/your_account">Your Account</a> Your Orders
+    </div>
+
+    <h2>Your Addresses</h2>
+
+    <div class="useraddress">
+        <a href="{{BASE_URL}}user_account/new_address"><i class="fa fa-plus fa-4x"></i>
+            <h5>Add Address</h5>
+        </a>
+    </div>
+
+    <div class="useraddress">
+        <a href="{{BASE_URL}}user_account/new_address"><i class="fa fa-plus fa-4x"></i>
+            <h5>Add Address</h5>
+        </a>
+    </div>
+
+</div>
+{% endblock %}

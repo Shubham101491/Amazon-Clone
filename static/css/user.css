@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.user_address {
+    margin: auto;
+    width: 40%;
+    /* border: 1px solid gray; */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.user_address input[type=text], input[type=tel], input[type=email], input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    outline: none;
+}
+
+.user_address label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.user_address select, option {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 5px;
+    /* box-sizing: border-box; */
+    padding: 5px;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.user_address button {
+    background-color: orange;
+}
